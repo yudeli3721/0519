@@ -7,10 +7,12 @@ with st.sidebar:
 
 col_left, col_right = st.columns(2)
 
-
 with col_left: 
-    st.write("###  新增區") 
-    st.button("按鈕放左邊")
+    st.write("###  行程主旨") 
+    my_color = st.color_picker(
+        "挑選辨識顏色",
+        "#1A73E8"
+    )
 
 with col_right: 
     st.write("###  設定區") 
