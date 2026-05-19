@@ -6,6 +6,7 @@ with st.sidebar:
     st.radio("選擇群組", ["工作", "家庭", "朋友"])
 
 col_left, col_right = st.columns([1, 3], gap="large")
+tab1, tab2, tab3 = st.tabs(["首頁", "圖表", "設定"])
 
 with col_left: 
     st.write("###  新增區") 
@@ -17,9 +18,12 @@ with col_right:
     with st.container(border=True): 
         st.write(" 標題：開學典禮") 
         st.write(" 時間：09:00")
-    with st.tabs:
-        st.write("本月行程", "已封存行程")
-
+    with tab1: 
+        st.header("首頁") 
+        st.write("這是首頁內容")
+    with tab2: 
+        st.header("首頁") 
+        st.write("這是首頁內容")
 
 with st.expander("查看進階提醒參數設定"):
     st.write("這裡是發信伺服器的底層設定...")
