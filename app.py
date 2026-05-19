@@ -5,7 +5,7 @@ with st.sidebar:
     st.write("###  行事曆群組")
     st.radio("選擇群組", ["工作", "家庭", "朋友"])
 
-col_left, col_right = st.columns([2], gap="large")
+col_left, col_right = st.columns(2)
 
 
 with col_left: 
