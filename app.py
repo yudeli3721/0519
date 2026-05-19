@@ -1,4 +1,6 @@
 import streamlit as st
+import datetime
+
 st.set_page_config(page_title="微型 TimeTree", layout="wide")
 
 with st.sidebar:
@@ -15,10 +17,14 @@ with col_left:
     )
 
 with col_right: 
-    st.write("###  設定區") 
-    st.button("控制項放右邊")
-    with st.container(border=True): 
-        tab1, tab2 = st.tabs(["本月行程", "已封存行程"])
+    st.write("###  日期+時間") 
+    today = st.date_input(
+        "選擇日期",
+        datetime.date.today()
+    )
+    meeting_time = st.time_input(
+        "選擇時間"
+    )
 
 st.write("上面是大標題")
 st.divider()
