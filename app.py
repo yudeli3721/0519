@@ -7,6 +7,12 @@ with st.sidebar:
     st.write("###  行事曆群組")
     st.radio("選擇群組", ["工作", "家庭", "朋友"])
 
+view = st.segmented_control(
+  "檢視模式",
+  ["月視角", "週視角"],
+  default="月視角"
+)
+
 col_left, col_right = st.columns(2)
 
 with col_left: 
