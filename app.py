@@ -25,22 +25,23 @@ st.write("下面是內容區塊")
 with st.popover("快速進階篩選"):
     st.checkbox("隱藏已過期行程")
 
-my_color = st.color_picker(
- "挑選辨識顏色",
- "#1A73E8"
-)
-
-meeting_time = st.time_input(
-  "選擇時間"
-)
-
-import datetime
-today = st.date_input(
-  "選擇日期",
-  datetime.date.today()
-)
-
-title = st.text_input(
-  "行程主旨",
-  placeholder="請填寫會議名稱..."
-)
+st.columns(2):
+    my_color = st.color_picker(
+     "挑選辨識顏色",
+     "#1A73E8"
+    )
+    
+    meeting_time = st.time_input(
+      "選擇時間"
+    )
+    
+    import datetime
+    today = st.date_input(
+      "選擇日期",
+      datetime.date.today()
+    )
+    
+    title = st.text_input(
+      "行程主旨",
+      placeholder="請填寫會議名稱..."
+    )
