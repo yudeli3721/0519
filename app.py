@@ -36,6 +36,11 @@ st.write("上面是大標題")
 st.divider()
 st.write("下面是內容區塊")
 
+is_open = st.toggle(
+  "開啟 24H 郵件自動發信通知",
+  value=True
+)
+
 with st.popover("快速進階篩選"):
     st.checkbox("隱藏已過期行程")
 
