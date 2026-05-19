@@ -19,7 +19,3 @@ with col_right:
         st.write(" 標題：開學典禮") 
         st.write(" 時間：09:00")
         tab1, tab2 = st.tabs(["本月行程", "已封存行程"])
-
-with st.expander("查看進階提醒參數設定"):
-    st.write("這裡是發信伺服器的底層設定...")
-
