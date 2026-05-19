@@ -5,7 +5,7 @@ with st.sidebar:
     st.write("###  行事曆群組")
     st.radio("選擇群組", ["工作", "家庭", "朋友"])
 
-col_left, col_right = st.columns([1, 3], gap="large")
+col_left, col_right = st.columns([2], gap="large")
 
 
 with col_left: 
@@ -25,4 +25,3 @@ st.write("下面是內容區塊")
 with st.popover("快速進階篩選"):
     st.checkbox("隱藏已過期行程")
 
-st.columns(2)
