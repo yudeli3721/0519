@@ -18,3 +18,5 @@ with col_right:
     with st.container(border=True): 
         tab1, tab2 = st.tabs(["本月行程", "已封存行程"])
 
+with st.popover("快速進階篩選"):
+    st.checkbox("隱藏已過期行程")
