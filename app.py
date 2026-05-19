@@ -25,7 +25,7 @@ st.write("下面是內容區塊")
 with st.popover("快速進階篩選"):
     st.checkbox("隱藏已過期行程")
 
-st.columns(2):
+st.columns(2)
     my_color = st.color_picker(
      "挑選辨識顏色",
      "#1A73E8"
